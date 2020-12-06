@@ -10,10 +10,154 @@
             <br>&emsp; &emsp; 1. Overview of Git and GitHub
             <br>&emsp; &emsp; 2. How to install Git and GitHub
             <br>&emsp; &emsp; 3. Some basic Git commands
-            <br>&emsp; &emsp; 4. How to resolve conflict
-            <br>&emsp; &emsp; 5. Branching
+            <br>&emsp; &emsp; 4. Branching
+            <br>&emsp; &emsp; 5. How to resolve conflict
         </p>
-
+        &emsp;
+        <h3>&emsp; 1. Overview of Git and GitHub</h3>
+        <p><strong>&emsp; a. Git:</strong>
+            <br>&emsp; Git is a Distributed Version Control System (which can be called DVCS). 
+            Thanks to Git, the code management and developer teamwork have become simpler and more convenient. 
+            Also, Git provides each programmer with a separate repository containing a complete history of changes.
+            <br>&emsp; These are the common benefits when using Git:
+            <ul>
+                <li>Easy to use, fast and very fast.</li>
+                <li>Easy to combine branches together, help code development in teamwork much simpler.</li>
+                <li>Can clone code source from the repository or clone a modified version from the repository, 
+                    or a branch from a repository so that you can work anywhere.</li>
+            </ul>
+        </p>
+        <p><strong>&emsp; b. GitHub:</strong>
+            <br>&emsp; GitHub is a project and code management system, with the purpose of acting like a social 
+            network for programmers. Also, GitHub is a popular service which can provide storage to save Git 
+            source code for software projects. Aside from having all Git features, GitHub also provides features about 
+            social so that the developers can easily communicate with each other.
+            <br>&emsp; Social networking features that GitHub includes are feeds, feedbacks and network graph so that 
+            the developers can learn from each other through commit history.
+            <br>&emsp; These are the reasons you should use GitHub:
+            <ul>
+                <li>Easy to manage source code.</li>
+                <li>Can track changes through versions</li>
+                <li>GitHub helps improving your coding skills, not to mention tracking bugs.</li>
+                <li>GitHub is a useful resource.</li>
+            </ul>
+        </p>
+        <p><strong><i>&emsp; In conclusion, Git and GitHub have become influential factors in the open source community. 
+            Nowadays, using Git and GitHub is mandatory if you want to apply for jobs. That is why you should learn 
+            about Git and GitHub now.</i></strong></p>
+        &emsp;
+        <h3>&emsp; 2. How to install Git and GitHub</h3>
+        <p>&emsp; There are two ways to install Git and GitHub:
+            <br><strong>&emsp; a. Install Git (and also GitHub) using GitHub Desktop:</strong>
+            <br>&emsp; Step 1: Go to this website: <a href="https://desktop.github.com/ ">https://desktop.github.com</a> 
+            and download GitHub Desktop. 
+            <br>&emsp; Step 2: Open GitHub Desktop Setup and wait for GitHub to be installed.
+            <br>&emsp; <strong>Note: </strong>installing GitHub Desktop will also install the latest version of Git if 
+            you have not downloaded Git yet.
+            <br>&emsp; Step 3: Once GitHub Desktop opened, log in with your GitHub account and you can start using GitHub 
+            on your desktop.
+            <br><strong>&emsp; b. Install Git only: (this method is used only when you want to use GitHub directly on GitHub 
+            website and do not want to use GitHub on desktop):</strong>
+            <br>&emsp; Step 1: Go to this website: <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+            <br>&emsp; Step 3: Open Git Setup and follow the instructions as provided in the Git Setup wizard screen until 
+            the installation is complete.
+            <br>&emsp; <strong>Note: </strong>these instructions are most for Windows, as because Mac and Linux usually 
+            already have Git installed. However, if you did not have Git installed for whatever reason, you can install 
+            Git using the methods on top.
+        </p>
+        <p><i>&emsp; To verify that Git has been installed, open up your terminal application and type ‘git version’ to see 
+        whether Git is installed or not and which version it is, or it will alert you that git is an unknown command.</i></p>
+        &emsp;
+        <h3>&emsp; 3. Some basic Git commands</h3>
+        <p>
+            <strong>&emsp; 1/ git config: </strong>to set username and email in the main configuration file.
+            <br>&emsp; To check username and email, type <i>git config -- global user.name</i> and 
+            <i>git config -- global user.email.</i>
+            <br>&emsp; To set new username and email, type <i>git config -- global user.name = “your_username”</i> and 
+            <i>git config -- global user.email = “your_useremail”.</i>
+        </p>
+        <p>
+            <strong>&emsp; 2/ git init: </strong>to create new git repository, project or repository which is already had on server.
+            <br>&emsp; To do this, type <i>git init</i> in the project original folder.
+        </p>
+        <p>
+            <strong>&emsp; 3/ git clone: </strong>to copy one git repository from the remote source.
+            <br>&emsp; To do this, type <i>git clone <(clone git url)></i>
+        </p>
+        <p>
+            <strong>&emsp; 4/ git status: </strong>to check files status you have changed in your working directory.
+            <br>&emsp; To do this, type <i>git status</i>
+        </p>
+        <p>
+            <strong>&emsp; 5/ git add: </strong>to add the files and folders you want to the staging area.
+            <br>&emsp; To do this, type <i>git add *</i> to add all files, type <i>git add (file name)</i> to add your selected file.
+        </p>
+        <p>
+            <strong>&emsp; 6/ git commit: </strong>to save a snapshot about your changes in your working directory. And all the 
+            changed files, folders must be in the staging area. Every time commit it will save history changes with the username 
+            and email of who has commit. In Git, you can also restore these files in its commit history.
+            <br>&emsp; To do this, type <i>git commit --m ”(Message so that you can note the changes)”</i>
+        </p>
+        <p>
+            <strong>&emsp; 7/ git push: </strong>after you had added and committed the changes, you can do this to push all these 
+            changes to your local repository.
+            <br>&emsp; To do this, type <i>git push</i> after git add and git commit.
+        </p>
+        <p>
+            <strong>&emsp; 8/ git pull: </strong>to pull all the updates from your local repository and apply these updates on your code.
+            <br>&emsp; To do this, type <i>git pull</i>
+        </p>
+        <p>
+            <strong>&emsp; 9/ git branch: </strong>to list all the branches.
+            <br>&emsp; To do this, type <i>git branch</i>
+        </p>
+        <p>
+            <strong>&emsp; 10/ git checkout: </strong>to move to the other branch.
+            <br>&emsp; To do this, type <i>git checkout <(branch name)></i>
+        </p>
+        <p>
+            <strong>&emsp; 11/ git stash: </strong>to save changes that you do not want to commit now.
+            <br>&emsp; To do this, type <i>git stash</i>
+        </p>
+        <p>
+            <strong>&emsp; 12/ git merge: </strong>to merge two branches together.
+            <br>&emsp; To do this, move to the branch that you want to merge and type 
+            <i>git merge <(branch that you want to merge with)></i>
+        </p>
+        <p>
+            <strong>&emsp; 13/ git reset: </strong>to remove files and folders you have added to the staging 
+            area so that these files will not be committed.
+            <br>&emsp; To do this, type <i>git reset HEAD (file name)</i>
+        </p>
+        &emsp;
+        <h3>&emsp; 4. Branching</h3>
+        <p>
+            &emsp; Branch is a function use for branching and storing history changes. Branch which has been 
+            branched will not affect other branches so it can be modified in the same repository at the same time. 
+            Moreover, branches can be merged into one branch through using git merge.
+            <br>&emsp; Branching will be used when a team member wants to create a branch for their own work and do 
+            not want to affect the work of other members. After that, members who have finished their works and changes 
+            will start adding these to the main branch. In this way, other member’s works will not be affected, and you 
+            can also do your own work. Furthermore, by saving works and changes history, if there is any conflicts or problems, 
+            it will be easier to solved through checking history.
+            <br>&emsp; When committing for the first time in a repository, Git will create a branch automatically which is named main. 
+            So, every commit will be added to the main branch in the future until the user switches to another branch.
+            <br>&emsp; Here are some commands about branching:
+            <ul>
+                <li>git branch: to check all the branches in a project. If there are no branches except from the 
+                    main branch, then there will be no results.</li>
+                    <strong>Important note:</strong> before creating a new branch, you must commit the main branch so that Git will 
+                    understand what the main branch is. If not, there will be an error. So first, commit then you can create a new 
+                    branch.
+                <li>To create a new branch, type <i>git branch (new branch name)</i></li>
+                <li>To switch to the branch you just create, type <i>git checkout (branch name)</i></li>
+                <li>If you want to delete a branch from Git, type <i>git branch -d (branch name)</i>. But to do that, 
+                    you must not in the branch you want to delete, so the best way is to switch to the main branch and 
+                    then you can delete branch.</li>
+                <li>To switch back to the main branch, just type <i>git checkout main</i></li>
+                <li>If you want to merge branches together, first switch to the branch you want to merge and type <i>git 
+                    merge (branch name)</i>.</li>
+            </ul>
+        </p>
     </body>
 </html>
-<img src="cat.jpg">
